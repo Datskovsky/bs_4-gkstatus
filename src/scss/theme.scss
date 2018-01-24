@@ -1,0 +1,840 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+
+// import styles
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
+@import '../../node_modules/lightbox2/src/css/lightbox.css';
+
+// color variables
+
+$primary-color: #172026;
+$primary-alpha-color: rgba(23, 32, 38, 0.5);
+$muted-gray-color: #c1c1c1;
+$gray-color: #e1e5e9;
+$blue-color: #2f68a3;
+$blue-alpha-color: rgba(47, 104, 163, 0.7);
+$green-color: #00ad5d;
+$lightGreen-color: #d6ebe1;
+$light-color: #fff;
+$main-map-color: #bad4de;
+$hover-map-color: #7991a5;
+
+// my styles
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+a{
+    color: $blue-color;
+}
+
+i{
+    margin-right: 1rem;
+}
+
+// my button styles
+
+.button-static-blue{
+    background-color: $blue-color;
+    color: $light-color;
+    border-radius: 0; 
+}
+.button-static-blue:focus{
+    box-shadow: none;
+}
+.button-blue{
+    background: transparent;
+    border: 1px solid $blue-color;
+    color: $blue-color;
+    border-radius: 0; 
+}
+.button-blue:hover{
+    background-color: $blue-color;
+    color: $light-color;
+}
+.button-blue:focus{
+    box-shadow: none;
+}
+
+.button-static-green{
+    background-color: $green-color;
+    color: $light-color;
+    border-radius: 0; 
+}
+.button-static-green:focus{
+    box-shadow: none;
+}
+
+.button-green{
+    background: transparent;
+    border: 1px solid $green-color;
+    color: $green-color;
+    border-radius: 0; 
+}
+.button-green:hover{
+    background-color: $green-color;
+    color: $light-color;
+}
+.button-green:focus{
+    box-shadow: none;
+}
+
+.button-outline{
+    background: transparent;
+    border: 1px solid $light-color;
+    border-radius: 0;
+    color: $light-color;
+}
+.button-outline:hover{
+    background-color: $light-color;
+    color: $primary-color;
+}
+.button-outline:focus{
+    box-shadow: none;
+}
+
+.button-outline-dark{
+    background: transparent;
+    border: 1px solid $primary-color;
+    border-radius: 0;
+    color: $primary-color;
+}
+.button-outline-dark:hover{
+    background-color: $primary-color;
+    color: $light-color;
+}
+.button-outline-dark:focus{
+    box-shadow: none;
+}
+
+// index
+.header{
+    background-color: $primary-color;
+}
+
+.bg-hero{
+    background-image: url('../img/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100% - 55px);
+}
+
+@media screen and (max-width: 540px) {
+    .text-small {
+        font-size: 0.5rem;
+    }
+}
+
+.bg-right-column{
+    background-image: url('../img/bg-right-column.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-blue-alpha{
+    background-color: $blue-alpha-color
+}
+
+.row-adv h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.col-adv{
+    height: 300px;
+}
+
+.triangle{
+    display: inline-block;
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: $light-color;
+    box-shadow: 10px 10px 30px rgba(23, 32, 38, 0.5);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+
+}
+
+.triangle img{
+    margin-top: 25px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.bg-activity{
+    background-image: url('../img/bg-activity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+}
+
+.col-activity{
+    text-align: center;
+    height: 480px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .col-activity {
+        height: auto;
+    }
+}
+
+.activity-card{
+    width: 100%;
+    background-color: $blue-alpha-color;
+}
+
+.header-news{
+    background-color: $gray-color;
+}
+
+.card-news{
+    box-shadow: 0 30px 50px rgba(23, 32, 38, 0.2);
+}
+
+.bg-recall{
+    background-image: url('../img/bg-recall.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+.form-control:active{
+    box-shadow: none;
+}
+
+select{
+    -moz-appearance: none;
+    // text-indent: 0.01px; 
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    border-radius: 0;
+}
+
+.footer{
+    background-color: $primary-color;
+}
+
+.nav-footer{
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    padding: 0;
+}
+.nav-footer a{
+    color: $muted-gray-color;
+}
+.nav-footer a:hover{
+    color: $light-color;
+}
+
+.nav-item .active{
+    color: $light-color;
+}
+.footer-adres{
+    text-align: right;
+    color: $muted-gray-color;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+/**
+* about page
+*/
+
+.bg-newTechnical{
+    background-image: url('../img/bg-newTechnical.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+}
+
+.card-newTech{
+    height: 100%;
+    background-color: $blue-alpha-color;
+    border: 0;
+}
+
+// partners
+
+.name-frame{
+    background-color: $green-color;
+    text-align: center;
+    font-weight: 700;
+    color: $light-color;
+}
+
+.partners-carousel{
+    position: relative;
+
+    img{
+        border: 1px solid $muted-gray-color;
+    }
+}
+
+.owl-nav{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -12px;
+}
+
+.owl-prev{
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-left: -25px;
+    border-bottom: 3px solid $blue-color;
+    border-left: 3px solid $blue-color;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+.owl-next{
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin-right: -25px;
+    border-bottom: 3px solid $blue-color;
+    border-right: 3px solid $blue-color;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+
+// geographic business
+.bg-geoBusiness{
+    background-image: url('../img/bg-geoBusiness.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $light-color;
+}
+.st0{
+    fill:$main-map-color;
+    stroke:#FFFFFF;
+    stroke-width:0.5;
+}
+#africa, #sng, #azia, #latinic-america, #australia{
+    fill: $hover-map-color;
+    stroke:#FFFFFF;
+    stroke-width:0.5;
+}
+
+// reviews
+.col-rev{
+    text-align: -webkit-center;
+    margin-top: 50px;
+}
+
+.wrapp-reviews{
+    box-shadow: 0 10px 30px rgba(23, 32, 38, 0.2);
+    width: 200px;
+}
+
+/**
+* fee-development
+*/
+
+.bg-fee-dev{
+    background-image: url('../img/bg-fee-dev.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h5{
+        font-size: 1rem;
+    }
+}
+
+/**
+* project activity
+*/
+
+.bg-project{
+    background-image: url('../img/bg-project.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+
+    h5{
+        font-size: 1rem;
+    }
+
+    p{
+        font-weight: 300;
+    }
+}
+
+.bg-engineering-survey{
+    background-image: url('../img/bg-engineering-survey.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+
+    h5{
+        font-size: 1rem;
+    }
+
+    p{
+        font-weight: 300;
+    }
+}
+
+.bg-architecture{
+    background-image: url('../img/bg-architecture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+
+    h5{
+        font-size: 1rem;
+    }
+
+    p{
+        font-weight: 300;
+    }  
+}
+
+.bg-special-tech{
+    background-image: url('../img/bg-special-tech.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+
+    h5{
+        font-size: 1rem;
+    }
+
+    p{
+        font-weight: 300;
+    }      
+}
+
+.form-check-input {
+    margin-left: 0;
+}
+
+.form-check-inline .form-check-label {
+    vertical-align: 0rem;
+    font-size: .9rem;
+}
+
+/**
+* expert activity
+*/
+
+.bg-expert-activity{
+    background-image: url('../img/bg-expert-activity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+
+    h5{
+        font-size: 1rem;
+    }
+
+    p{
+        font-weight: 300;
+    }      
+}
+
+/**
+* technical client
+*/
+
+.bg-technical-client{
+    background-image: url('../img/bg-technical-client.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+
+    h5{
+        font-size: 1rem;
+    }
+
+    p{
+        font-weight: 300;
+    }        
+}
+
+/**
+* investment activity
+*/
+
+.bg-investment-activity{
+    background-image: url('../img/bg-investment-activity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+
+    a{
+        color: $light-color;
+    }
+}
+
+/**
+* privilege club
+*/
+
+.bg-club{
+    background-image: url('../img/bg-club.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+}
+
+.wrapp-card img{
+    border-radius: 11px;
+    box-shadow: 0 30px 30px rgba(23, 32, 38, 0.3);
+}
+
+.col-privilege p{
+    margin-top: -10px;
+}
+
+.onechar{
+    font-weight: 800;
+    color: $lightGreen-color; 
+}
+
+.adv-icon{
+    background-color: $gray-color;
+}
+
+.bg-mountains{
+    background-image: url('../img/bg-mountains.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**
+* news
+*/
+
+.bg-news{
+    background-image: url('../img/bg-news.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;   
+}
+
+/**
+* separate news page
+*/
+
+.news-photo{
+    background-color: $blue-color;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+
+    img{
+        position: absolute;
+        top: -50%;
+    }
+}
+
+/**
+* vakansies
+*/
+
+.bg-vakansies{
+    background-image: url('../img/bg-vakansies.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;       
+}
+
+.send-rezume{
+    height: 100%;
+    background-color: $primary-alpha-color;
+}
+
+.vakansies-accordion .card{
+    border-radius: 0;
+    border-color: $primary-color;
+    margin-top: 15px;
+
+    .card-header {
+        border-radius: 0;
+        background-color: $primary-color;
+    
+        a{
+            color: $light-color;
+        }
+    }
+
+}
+
+.hr-specialist{
+    background-color: $blue-color;
+    color: $light-color;
+    margin-left: -0.29rem;
+}
+
+
+.custom-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+}
+
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin: 0;
+    opacity: 0 
+}
+
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin-bottom: 0;
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: "Выберите файл";
+}
+
+.custom-file-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: calc(calc(2.25rem + 2px) - 1px * 2);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    content: "Browse";
+    background-color: #e9ecef;
+    border-left: 1px solid #ced4da;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+/**
+* contacts
+*/
+
+.bg-contacts-moscow{
+    height: 380px;
+    background-image: url('../img/moscow.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.bg-contacts-voronezh{
+    height: 380px;
+    background-image: url('../img/voronezh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+#map-moscow{
+    height: 380px;
+    width: 100%;
+    margin-top: -190px;
+    background-color: $light-color;
+    box-shadow: 0 30px 30px rgba(23, 32, 38, 0.3);
+}
+#map-voronezh{
+    height: 380px;
+    width: 100%;
+    margin-top: -190px;
+    background-color: $light-color;
+    box-shadow: 0 30px 30px rgba(23, 32, 38, 0.3);
+}
+
+@media screen and (max-width: 991px) {
+    #map-moscow {
+        margin-top: 0;
+    }
+    #map-voronezh {
+        margin-top: 0;
+    }
+}
+
+/**
+* reviews
+*/
+
+.reviews-pagination .page-link:active{
+    background: transparent;
+    color: $muted-gray-color;
+}
+.reviews-pagination .page-link:focus{
+    background: transparent;
+    color: $muted-gray-color;
+}
+
+.page-link{
+    border: 0;
+    color: $muted-gray-color;
+}
+.page-link:hover{
+    background: transparent;
+    text-decoration: underline;
+    color: $primary-color;
+}
+
+.reviews-pagination .active .page-link{
+    text-decoration: underline;
+    color: $primary-color;
+    background: transparent;
+    border: 0;
+}
+
+/**
+* arch partfolio slider
+*/
+
+.carousel-caption {
+    background-color: $primary-alpha-color;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/**
+* login & signup
+*/
+
+.bg-login{
+    background-image: url('../img/bg-login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.wrapper-form{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+}
+
+
+
+
+
+
+/************************* PERSONAL AREA *************************/
+
+
+
+
+
+.bg-profile{
+    background-image: url('../img/bg-login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(450px - 55px);   
+}
+
+.bg-card-info{
+    background-color: $gray-color;
+    margin-top: 7rem;
+}
+
+.card-frame{
+    margin-top: -7rem;
+
+    img{
+        border-radius: 12px;
+        box-shadow: 0 30px 30px rgba(23, 32, 38, 0.3);
+    }
+}
+
+.table{
+    border: 1px solid $gray-color;
+
+    a{
+        color: $light-color;
+    }
+}
+
+.table thead th {
+    vertical-align: middle;
+    border-bottom: 0;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-top: 1px solid $gray-color;
+}
+
+.table td{
+    border-right: 1px solid $gray-color;
+}
+.table td:last-child{
+    border-right: 0;
+}
+.table th{
+    border-right: 1px solid $gray-color;
+}
+.table th:last-child{
+    border-right: 0;
+}
+
+.select-form{
+    background-image: url('../img/icon/select-icon.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: 0;
+}
+
+.form-filter select{
+    font-weight: 700;
+    color: $primary-color;
+}
