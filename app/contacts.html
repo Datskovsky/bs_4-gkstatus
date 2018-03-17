@@ -77,8 +77,8 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="club.html">Клуб привелегий</a>
-                                <a class="dropdown-item" href="arch-portfolio.html">Архитектурное портфолио</a>
-                                <a class="dropdown-item" href="../src/doc/portfolio.pdf" target="blank">Портфолио</a>
+                                <a class="dropdown-item" target="blank" href="../dist/img/doc/arch-portfolio.pdf">Архитектурное портфолио</a>
+                                <a class="dropdown-item" target="blank" href="../dist/img/doc/portfolio.pdf">Портфолио</a>
                                 <a class="dropdown-item" href="news.html">Новости</a>
                                 <a class="dropdown-item" href="vacancies.html">Вакансии</a>
                             </div>
@@ -122,7 +122,7 @@
             <div class="col-lg-6 col-md-12 py-3">
                 <ul class="list-unstyled">
                     <li class="mt-3">Проектный филиал:<br>
-                            394030 г. Воронеж, пер. Бакунинский, 11, БЦ «VIEL», 4-й этаж, офис 413</li>
+                            394030 г. Воронеж, ул. Комиссаржевской, 10, БЦ класса А "Премьер", 7-й этаж</li>
                     <li> Наш телефон:<br>8 (495) 775-59-55</li>
                     <li>График работы:<br>Пн - Пт<br>9:00 - 18:00</li>
                     <li>E-mail:<br>info@s-grp.ru</li>
@@ -167,10 +167,10 @@
                             <a class="nav-link" href="club.html">Клуб привелегий</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="arch-portfolio.html">Архитектурное портфолию</a>
+                            <a class="nav-link" target="blank" href="../dist/img/doc/arch-portfolio.pdf">Архитектурное портфолио</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Портфолио</a>
+                            <a class="nav-link" target="blank" href="../dist/img/doc/portfolio.pdf">Портфолио</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="news.html">Новости</a>
@@ -209,24 +209,24 @@
 
     <script>
         function initMap() {
-        var uluru = {lat: 55.749813273947574, lng: 37.53755422309041};
-        var map = new google.maps.Map(document.getElementById('map-moscow'), {
-            zoom: 15,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-        var uluru = {lat: 51.66991553941824, lng: 39.186651427298784};
-        var map = new google.maps.Map(document.getElementById('map-voronezh'), {
-            zoom: 17,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
+            var uluru = {lat: 55.749813273947574, lng: 37.53755422309041};
+            var map = new google.maps.Map(document.getElementById('map-moscow'), {
+                zoom: 17,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            var uluru = {lat: 51.671316481708544, lng: 39.20342677135727};
+            var map = new google.maps.Map(document.getElementById('map-voronezh'), {
+                zoom: 18,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
         }
     </script>
 

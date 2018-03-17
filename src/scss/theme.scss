@@ -123,6 +123,20 @@ i{
     background-color: $primary-color;
 }
 
+// .bg-hero{
+//     width: 100%;
+//     height: calc(100% - 55px);
+//     position: relative;
+// }
+
+// video{
+//     min-height: 100%;
+//     min-width: 100%;
+//     position: absolute;
+//     left: 0;
+
+// }
+
 .bg-hero{
     background-image: url('../img/bg-hero.jpg');
     background-repeat: no-repeat;
@@ -547,18 +561,18 @@ select.form-control:not([size]):not([multiple]) {
 * separate news page
 */
 
-.news-photo{
-    background-color: $blue-color;
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    position: relative;
+// .news-photo{
+//     background-color: $blue-color;
+//     width: 100%;
+//     height: 350px;
+//     overflow: hidden;
+//     position: relative;
 
-    img{
-        position: absolute;
-        top: -50%;
-    }
-}
+//     img{
+//         position: absolute;
+//         top: -50%;
+//     }
+// }
 
 /**
 * vakansies
