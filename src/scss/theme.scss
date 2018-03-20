@@ -138,15 +138,26 @@ i{
 // }
 
 .bg-hero{
-    background-image: url('../img/bg-hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url('../img/bg-hero.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    position: relative;
     height: calc(100% - 55px);
+    background: rgba(61, 83, 101, 0.5);
+}
+
+#myVideo{
+    z-index: -999;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 540px) {
     .text-small {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 }
 
