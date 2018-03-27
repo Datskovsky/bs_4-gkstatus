@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Информация о ходе работ по проектированию</title>
+    <title>Информация о ходе работ по экспертизе</title>
 
     <!-- Website icon -->
     <link rel="icon" type="image/png" href="dist/img/favicon.png">
@@ -59,6 +59,7 @@
                             <a class="nav-link" href="admin.html">Список компаний</a>
                         </li>
                     </ul>
+                    <span class="text-white">АО "ПКС Девелопмент"</span>
                     <a href="login.html" class="btn button-outline px-4 ml-4">Выйти</a>
                 </div>
             </nav>
@@ -115,37 +116,38 @@
         <h1>Информация по договору</h1>
     </div>
     <div class="container-fluid py-5">
+        <button type="button" class="btn btn-outline-danger rounded-0 float-right mb-3">Изменить</button>
         <div class="table-responsive">
             <table class="table table-striped text-center">
                 <thead>
                     <tr>
-                        <th scope="col" rowspan="2">№ дела в проектировании</th>
+                        <th scope="col" rowspan="2">№ дела в экспертизе</th>
                         <th scope="col" rowspan="2" colspan="2">№ договора/дата</th>
                         <th scope="col" rowspan="2">Статус договора</th>
                         <th scope="col" rowspan="2">Сумма договора</th>
                         <th scope="col" rowspan="2">Объект</th>
                         <th scope="col" rowspan="2">Вид услуги</th>
                         <th scope="col" rowspan="2">Этапы</th>
-                        <th scope="col" colspan="2">Ответственные лица от Статус Групп
+                        <th scope="col" colspan="2">Ответственные лица от Статус
                             <tr>
-                                <td>Помощник ГИПа</td>
-                                <td>ГИП</td>
+                                <td>Куратор</td>
+                                <td>Эксперт</td>
                             </tr>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row">1</th>
-                        <td>213</td>
-                        <td>10.12.17</td>
+                        <td scope="row">866</th>
+                        <td>ПД-004</td>
+                        <td>08.02.18</td>
                         <td>в работе</td>
-                        <td>руб.</td>
-                        <td>Бизнес центр</td>
-                        <td>Проектирование</td>
-                        <td>Разработка стадии П</td>
-                        <td>Колчина<br>(доб. 135)</td>
-                        <td>Севостьянов<br>(доб. 135)</td>
+                        <td>245 000 руб.</td>
+                        <td>Малоэтажная жилая застройка "Апрель"</td>
+                        <td>Экспертиза ПД</td>
+                        <td>Принятие документации на проверку</td>
+                        <td>Попова Е.<br>(доб. 302)</td>
+                        <td>Воронина</td>
                     </tr>
                 </tbody>
             </table>
@@ -155,8 +157,34 @@
     <div class="container">
         <h3>Excel таблица</h3>
     </div>
-    <div class="container-fluid">
-
+    <div class="container-fluid mt-5">таблица</div>
+    <div class="container mt-5">
+        <h3>Сводное заключение</h3>
+    </div>
+    <div class="container-fluid mt-3">
+        <button type="button" class="btn btn-outline-danger rounded-0 float-right mb-3">Изменить</button>
+        <div class="table-responsive">
+            <table class="table table-striped text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Сводное заключение</th>
+                        <th scope="col">Дата</th>
+                        <th scope="col">Номер</th>
+                        <th scope="col">Скачать файл</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Получено</th>
+                        <td>20.12.2018</td>
+                        <td>222</td>
+                        <td>
+                            <button class="btn button-static-green w-100">Скачать</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- footer -->

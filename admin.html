@@ -85,7 +85,8 @@
     <div class="container mt-5 text-center">
         <h5>Проектный отдел</h5>
     </div>
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-3">
+        <button type="button" class="btn btn-outline-success rounded-0 mb-3 px-5">Создать</button>
         <div class="table-responsive">
             <table class="table table-striped text-center">
                 <thead>
@@ -95,16 +96,32 @@
                         <th scope="col">Сумма договоров</th>
                         <th scope="col">Сумма до нового статуса</th>
                         <th scope="col">Подробнее</th>
+                        <th scope="col">Редактирование</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row">Наименование</th>
-                        <td>Статус</td>
-                        <td>руб.</td>
-                        <td>руб.</td>
+                        <td scope="row">ООО "Дюфрей"</th>
+                        <td>Без статуса</td>
+                        <td>400 000 руб.</td>
+                        <td>100 000 руб.</td>
                         <td>
-                            <a href="profile.html" class="btn button-static-green w-100">Перейти</a>
+                            <a href="company_1.html" class="btn button-static-green w-100">Перейти</a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-danger rounded-0">Изменить</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">ООО "Саб-Урбан" в лице тех. заказчика ООО "СтройГарант"</th>
+                        <td>Без статуса</td>
+                        <td>10 000 руб.</td>
+                        <td>490 000 руб.</td>
+                        <td>
+                            <a href="company_2.html" class="btn button-static-green w-100">Перейти</a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-danger rounded-0">Изменить</button>
                         </td>
                     </tr>
                 </tbody>
@@ -114,7 +131,8 @@
     <div class="container mt-5 text-center">
         <h5>Экспертный отдел</h5>
     </div>
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-3">
+        <button type="button" class="btn btn-outline-success rounded-0 mb-3 px-5">Создать</button>
         <div class="table-responsive">
             <table class="table table-striped text-center">
                 <thead>
@@ -124,16 +142,32 @@
                         <th scope="col">Сумма договоров</th>
                         <th scope="col">Сумма до нового статуса</th>
                         <th scope="col">Подробнее</th>
+                        <th scope="col">Редактирование</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row">Наименование</th>
-                        <td>Статус</td>
-                        <td>руб.</td>
-                        <td>руб.</td>
+                        <td scope="row">ООО "Венера"</th>
+                        <td>Без статуса</td>
+                        <td>270 000 руб.</td>
+                        <td>230 000 руб.</td>
                         <td>
-                            <a href="profile.html" class="btn button-static-green w-100">Перейти</a>
+                            <a href="company_3.html" class="btn button-static-green w-100">Перейти</a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-danger rounded-0">Изменить</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">АО "ПКС Девелопмент"</th>
+                        <td>Без статуса</td>
+                        <td>245 000 руб.</td>
+                        <td>255 000 руб.</td>
+                        <td>
+                            <a href="company_4.html" class="btn button-static-green w-100">Перейти</a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-danger rounded-0">Изменить</button>
                         </td>
                     </tr>
                 </tbody>
@@ -164,10 +198,13 @@
                             <div class="form-group mb-0 form-filter">
                                 <select class="form-control select-form" id="exampleFormControlSelect1">
                                     <option selected value="Вид услуги">Вид услуги</option>
+                                    <option>Инженерные изыскания</option>
                                     <option>Проектирование</option>
                                     <option>Экспертиза</option>
                                     <option>Технический заказчик</option>
+                                    <option>Авторский надзор</option>
                                     <option>Строительный контроль</option>
+                                    <option>Согласование</option>
                                 </select>
                             </div>
                         </th>
@@ -177,8 +214,8 @@
                                     <option selected value="Куратор">Куратор</option>
                                     <option>Колчина</option>
                                     <option>Асанова</option>
-                                    <option>Деревянкин</option>
-                                    <option>Теслина</option>
+                                    <option>Лычагина</option>
+                                    <option>Львова</option>
                                     <option>Попова</option>
                                 </select>
                             </div>
@@ -188,13 +225,43 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row">Наименование</th>
-                        <td>Статус</td>
-                        <td>руб.</td>
-                        <td>руб.</td>
-                        <td>руб.</td>
+                        <td scope="row">ООО "Дюфрей"</th>
+                        <td>СГ-120</td>
+                        <td>Завершено</td>
+                        <td>Проектирование</td>
+                        <td>Львова Е.</td>
                         <td>
-                            <a href="info-project.html" class="btn button-static-green w-100">Перейти</a>
+                            <a href="info-project_1.html" class="btn button-static-green w-100">Перейти</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">ООО "Саб-Урбан" в лице тех. заказчика ООО "СтройГарант"</th>
+                        <td>СГ-007</td>
+                        <td>Завершено</td>
+                        <td>Проектирование</td>
+                        <td>Асанова В.</td>
+                        <td>
+                            <a href="info-project_2.html" class="btn button-static-green w-100">Перейти</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">ООО "Венера"</th>
+                        <td>ПИ-016</td>
+                        <td>В работе</td>
+                        <td>Экспертиза ПД и РИИ</td>
+                        <td>Попова Е.</td>
+                        <td>
+                            <a href="info-expProject_1.html" class="btn button-static-green w-100">Перейти</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">АО "ПКС Девелопмент"</th>
+                        <td>ПД-004</td>
+                        <td>В работе</td>
+                        <td>Экспертиза ПД</td>
+                        <td>Попова Е.</td>
+                        <td>
+                            <a href="info-expProject_2.html" class="btn button-static-green w-100">Перейти</a>
                         </td>
                     </tr>
                 </tbody>
