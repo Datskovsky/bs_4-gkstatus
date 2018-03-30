@@ -15,3 +15,5 @@ import 'lightbox2/src/js/lightbox.js';
 
 // global import file
 import './owl.js';
+
+import './scroll.js';

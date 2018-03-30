@@ -43,6 +43,12 @@ i{
     margin-right: 1rem;
 }
 
+// fade class for scroll effect
+
+.fade{
+    opacity: 1;
+}
+
 // my button styles
 
 .button-static-blue{
@@ -203,6 +209,8 @@ i{
 
 .bg-activity{
     background-image: url('../img/bg-activity.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -235,6 +243,8 @@ i{
 
 .bg-recall{
     background-image: url('../img/bg-recall.png');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -291,6 +301,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-newTechnical{
     background-image: url('../img/bg-newTechnical.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -388,6 +400,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-fee-dev{
     background-image: url('../img/bg-fee-dev.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -402,6 +416,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-project{
     background-image: url('../img/bg-project.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -417,6 +433,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-engineering-survey{
     background-image: url('../img/bg-engineering-survey.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -432,6 +450,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-architecture{
     background-image: url('../img/bg-architecture.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -447,6 +467,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-special-tech{
     background-image: url('../img/bg-special-tech.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -475,6 +497,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-expert-activity{
     background-image: url('../img/bg-expert-activity.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -494,6 +518,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-technical-client{
     background-image: url('../img/bg-technical-client.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -513,6 +539,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-investment-activity{
     background-image: url('../img/bg-investment-activity.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -528,6 +556,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-club{
     background-image: url('../img/bg-club.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
@@ -563,6 +593,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-news{
     background-image: url('../img/bg-news.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;   
@@ -591,6 +623,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .bg-vakansies{
     background-image: url('../img/bg-vakansies.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;       
@@ -684,6 +718,8 @@ select.form-control:not([size]):not([multiple]) {
 .bg-contacts-moscow{
     height: 380px;
     background-image: url('../img/moscow.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
 }
@@ -691,6 +727,8 @@ select.form-control:not([size]):not([multiple]) {
 .bg-contacts-voronezh{
     height: 380px;
     background-image: url('../img/voronezh.jpg');
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
 }
@@ -774,7 +812,7 @@ select.form-control:not([size]):not([multiple]) {
     background-image: url('../img/bg-login.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: calc(100% - 55px);
     position: relative;
 }
 
