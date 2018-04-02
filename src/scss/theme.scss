@@ -667,10 +667,16 @@ select.form-control:not([size]):not([multiple]) {
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
     line-height: 1.5;
-    color: #495057;
+    color: #858e95;
     background-color: #fff;
-    border: 1px solid #ced4da;
+    border: 1px solid #343a40;
     border-radius: 0;
+}
+
+input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
+    -webkit-appearance: listbox;
+    font-size: 0.95rem;
+    color: #858e95;
 }
 
 .custom-file-input {
