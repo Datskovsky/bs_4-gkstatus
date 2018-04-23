@@ -78,6 +78,9 @@ i{
     color: $light-color;
     border-radius: 0; 
 }
+.button-static-green:hover{
+    color: $light-color;
+}
 .button-static-green:focus{
     box-shadow: none;
 }
@@ -262,7 +265,7 @@ select{
     text-overflow: '';
     /* for IE */
     -ms-appearance: none;
-    appearance: none!important;
+    appearance: none !important;
 }
 
 select.form-control:not([size]):not([multiple]) {
@@ -312,6 +315,11 @@ select.form-control:not([size]):not([multiple]) {
     height: 100%;
     background-color: $blue-alpha-color;
     border: 0;
+}
+
+// company in the faces
+.bg-company{
+    // background: linear-gradient(to bottom, #ccc , #fff);
 }
 
 // partners
@@ -494,6 +502,14 @@ select.form-control:not([size]):not([multiple]) {
 /**
 * expert activity
 */
+
+.bg-exp{
+    background-image: url('../img/bg-exp.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .bg-expert-activity{
     background-image: url('../img/bg-expert-activity.jpg');
@@ -791,6 +807,27 @@ input[type="date"], input[type="time"], input[type="datetime-local"], input[type
     color: $primary-color;
     background: transparent;
     border: 0;
+}
+
+/**
+*   leadership
+**/
+
+.leadership-accordion .card{
+    border-radius: 0;
+    border: 0;
+
+    .card-header {
+        border-radius: 0;
+    
+        a{
+            color: $primary-color;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+
 }
 
 /**
