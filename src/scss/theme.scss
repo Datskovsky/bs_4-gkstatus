@@ -391,6 +391,14 @@ select.form-control:not([size]):not([multiple]) {
     stroke-width:0.5;
 }
 
+//main project
+.bg-mainProject{
+    background-image:url('../img/bg-mainProject.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
 // reviews
 .col-rev{
     text-align: -webkit-center;
