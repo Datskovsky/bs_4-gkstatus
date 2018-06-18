@@ -200,7 +200,16 @@ i{
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
+    transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    -ms-transition: .5s ease-out;
+}
 
+.triangle:hover{
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
 }
 
 .triangle img{
@@ -517,6 +526,10 @@ select.form-control:not([size]):not([multiple]) {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    a{
+        color: $light-color;
+    }
 }
 
 .bg-expert-activity{
@@ -590,6 +603,17 @@ select.form-control:not([size]):not([multiple]) {
 .wrapp-card img{
     border-radius: 11px;
     box-shadow: 0 30px 30px rgba(23, 32, 38, 0.3);
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+}
+
+.wrapp-card:hover img{
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
 }
 
 .col-privilege p{
