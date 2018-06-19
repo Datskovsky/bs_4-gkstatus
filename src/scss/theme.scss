@@ -200,16 +200,13 @@ i{
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    transition: .5s ease-out;
-    -webkit-transition: .5s ease-out;
-    -o-transition: .5s ease-out;
-    -ms-transition: .5s ease-out;
+
 }
 
-.triangle:hover{
-    transform: rotate(225deg);
-    -webkit-transform: rotate(225deg);
-    -ms-transform: rotate(225deg);
+.triangle:hover img{
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
 }
 
 .triangle img{
@@ -217,6 +214,10 @@ i{
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
+    transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    -ms-transition: .5s ease-out;
 }
 
 .bg-activity{
@@ -324,11 +325,6 @@ select.form-control:not([size]):not([multiple]) {
     height: 100%;
     background-color: $blue-alpha-color;
     border: 0;
-}
-
-// company in the faces
-.bg-company{
-    // background: linear-gradient(to bottom, #ccc , #fff);
 }
 
 // partners
